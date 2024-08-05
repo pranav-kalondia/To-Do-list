@@ -1,0 +1,186 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .background1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+  }
+  
+ .background2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height:80%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
+  }
+  .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .heading img{
+    width: 40px;
+  }
+
+  #details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+ #details input{
+    width: 45vw;
+    height:50px;
+    border-radius: 50px;
+  }
+
+  ::placeholder {
+    padding-top: 5px;
+    padding-left: 15px;
+    font-size: 20px;
+
+  }
+
+#details button{
+    width: 8vw;
+  background-color: #cf245f;
+  background-image: linear-gradient(to bottom right, #fcd34d, #ef4444, #ec4899);
+  border: 0;
+  border-radius: 50px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+  line-height: 1.75rem; /* 28px */
+  padding: 1rem 1.25rem;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+ }
+ ul li{
+    list-style: none;
+    padding-top: 10px;
+    padding-left: 36px;
+    font-size: 25px;
+    position: relative;
+    cursor: pointer;
+ }
+ ul li::before {
+    content: ' ';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-image: url('unchecked.png');
+    background-size: cover;
+    background-position: center;
+    top: 11px; /* Corrected unit */
+    left: 0px;
+  }
+  ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+    cursor: pointer;
+  }
+  ul li.checked::before {
+    content: ' ';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-image: url('checked.png');
+    background-size: cover;
+    background-position: center;
+    top: 11px; /* Corrected unit */
+    left: 0px;
+    cursor: pointer;
+
+} 
+
+ ul li span{
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+ }
+ ul li span:hover{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+color: rgb(255, 253, 253);
+border-radius: 50px;
+  
+ }
+
+
+ @media (max-width: 843px){
+
+
+     .background2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height:90%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
+  }
+
+
+
+  #details{
+    display: grid;
+    justify-content: center;
+   align-items: center;
+   gap: 10px;
+   
+  }
+  #details input{
+    width: 80vw;
+    height:50px;
+    border-radius: 50px;
+  }
+
+  #details button{
+   margin-left: 20vw;
+    width: 40vw;
+   
+  background-color: #cf245f;
+  background-image: linear-gradient(to bottom right, #fcd34d, #ef4444, #ec4899);
+  border: 0;
+  border-radius: 50px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+  line-height: 1.75rem; /* 28px */
+
+
+  user-select: none;
+  -webkit-user-select: none;
+
+
+ }
+ }
